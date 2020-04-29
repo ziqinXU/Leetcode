@@ -1,3 +1,5 @@
+///first attempt 5.13% faster, 100%less memory
+//Idea:sort each string with acsend order and compare them, pick the same string out and group them.
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
@@ -11,12 +13,12 @@ public:
         }
         for(int i=0;i<strs.size();i++)
         {
-            sort(strs[i].begin(),strs[i].end());
+            sort(strs[i].begin(),strs[i].end());//sort each string
         }
         int arr[100000]={0};
         int p=1;
         int found;
-        for(int i=0;i<strs.size();i++)
+        for(int i=0;i<strs.size();i++) //label the same string with same number
         {
             found=0;
             if(arr[i]==0)
@@ -43,7 +45,7 @@ public:
         {
            printf("%d ",arr[i]);
         }*/
-        for(int i=0;i<strs.size();i++)
+        for(int i=0;i<strs.size();i++) //group the string with same label
         {
             
             if(arr[i]!=-1)
