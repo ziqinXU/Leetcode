@@ -1,0 +1,90 @@
+class Solution {
+public:
+    string addBinary(string a, string b) {
+    
+    char temp;
+    string returnarray;
+    for(int i=0;i<a.size()/2;i++)
+    {
+        temp=a[i];
+        a[i]=a[a.size()-1-i];
+        a[a.size()-1-i]=temp;
+    }
+    for(int i=0;i<b.size()/2;i++)
+    {
+        temp=b[i];
+        b[i]=b[b.size()-1-i];
+        b[b.size()-1-i]=temp;
+    }
+    if(a.size()>b.size())
+    {
+        int count=0;
+        for(int i=0;i<b.size();i++)
+        {
+            returnarray.push_back((a[i]-'0'+b[i]-'0'+count)%2+'0');
+               
+                if((a[i]-'0'+b[i]-'0'+count)/2==1)
+                count=1;
+                else
+                count=0;
+               
+             
+               
+        }
+        
+            for(int i=b.size();i<a.size();i++)
+            {
+                returnarray.push_back((a[i]-'0'+count)%2+'0');
+                if((a[i]-'0'+count)/2==1)
+                count=1;
+                else
+                count=0;
+                
+            }
+            if(count==1)
+            returnarray.push_back(1+'0');
+            
+            
+
+        }
+         else
+        {
+        int count=0;
+        for(int i=0;i<a.size();i++)
+        {
+            returnarray.push_back((a[i]-'0'+b[i]-'0'+count)%2+'0');
+               
+                if((a[i]-'0'+b[i]-'0'+count)/2==1)
+                count=1;
+                else
+                count=0;
+               
+             
+               
+        }
+        
+            for(int i=a.size();i<b.size();i++)
+            {
+                returnarray.push_back((b[i]-'0'+count)%2+'0');
+                if((b[i]-'0'+count)/2==1)
+                count=1;
+                else
+                count=0;
+                
+            }
+            if(count==1)
+            returnarray.push_back(1+'0');
+            
+            
+
+        }
+        for(int i=0;i<returnarray.size()/2;i++)
+            {
+            temp=returnarray[i];
+            returnarray[i]=returnarray[returnarray.size()-1-i];
+            returnarray[returnarray.size()-1-i]=temp;
+            }
+       return returnarray;
+    
+    }
+};
