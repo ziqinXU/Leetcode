@@ -1,3 +1,6 @@
+///first attempt 64.08%faster, 100%less memory
+//Idea:go through string word and check corresponding positions with rules in string abbr. 
+//Convert abbr into alphabet and numbers.
 class Solution {
 public:
     bool validWordAbbreviation(string word, string abbr) {
@@ -7,14 +10,14 @@ public:
         int i;
         for(i=0;i<abbr.size();i++)
         {
-            if(abbr[i]<='z'&&abbr[i]>='a')
+            if(abbr[i]<='z'&&abbr[i]>='a')//if in abbr there is an alphabet, check the corresponding positions in word
             {
                 if(word[pos]!=abbr[i])
                 return false;
                 pos++;
                  //printf("%d",i);
             }
-            if(abbr[i]<='9'&&abbr[i]>='0')
+            if(abbr[i]<='9'&&abbr[i]>='0')//if there is a number, iterate until next alphabet appears.
             {
                 if(abbr[i]=='0')
                 return false;
@@ -28,14 +31,13 @@ public:
                 }
                 i=j-1;
                 pos=pos+(stoi(numberstring));
-              // printf("%d",pos);
                 numberstring.clear();
                 if(pos>word.size())
                 return false;
             }
         }
-       // printf("%d %d",i,pos);
-        if(word.size()!=pos)
+       
+        if(word.size()!=pos)//check whether the checking process reaches the end of string word 
         return false;
         return true;
     }
