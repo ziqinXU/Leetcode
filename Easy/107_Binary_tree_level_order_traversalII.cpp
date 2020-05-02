@@ -20,9 +20,7 @@ public:
     vector<int>temp;
     queue<TreeNode*>queuearray;
     TreeNode* p=root;
-    queuearray.push(p);//push root into queue
-    TreeNode* first;
-    TreeNode* last;    
+    queuearray.push(p);//push root into queue 
     vector<int>count;//count number in each level
     int tempcount=0;
     count.push_back(1);
