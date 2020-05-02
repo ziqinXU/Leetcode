@@ -1,3 +1,5 @@
+///first attempt 83.3%faster, 16.67%less memory
+//Idea:Similar as task 107, only needs to be converted into double type and divided by number of elements in each level
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -55,14 +57,14 @@ public:
         p=queuearray.front();
     }
 
-    for(int i=0;i<returnarray.size();i++)
+    for(int i=0;i<returnarray.size();i++)//can not use accumulate here, exceed the range. 
     {
          double sum=0;
         for(int j=0;j<returnarray[i].size();j++)
         {
             sum=sum+returnarray[i][j];
         }
-        averagenumber.push_back(sum/count[i]);
+        averagenumber.push_back(sum/count[i]);//average number of each level
         
     }
     return averagenumber;
