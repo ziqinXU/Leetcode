@@ -1,3 +1,5 @@
+///first attempt 88.47%faster, 100%less memory
+//Idea:Use queue to save numbers in each level, similar as task 107.
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -13,15 +15,10 @@ public:
     vector<vector<int>>returnarray;
     if(root==NULL)
     return returnarray;
-    
-    //vector<vector<int>>reversereturnarray;
     vector<int>temp;
     queue<TreeNode*>queuearray;
     TreeNode* p=root;
-    queuearray.push(p);
-    TreeNode* first;
-    TreeNode* last;
-    
+    queuearray.push(p);  
     vector<int>count;
     int tempcount=0;
     count.push_back(1);
@@ -36,14 +33,11 @@ public:
             if(p->left!=NULL)
             {
                 queuearray.push(p->left);
-                
-                //last=p->left;
                 tempcount++;
             }
             if(p->right!=NULL)
             {
                 queuearray.push(p->right);
-                //last=p->right;
                 tempcount++;
             }
             m--;
@@ -56,17 +50,12 @@ public:
             
         }
         returnarray.push_back(temp);
-        temp.clear();
-        
-        i++;
-        
+        temp.clear();    
+        i++;     
         count.push_back(tempcount);
         tempcount=0;
-       
-        //temp.push_back(queuearray.front()->val);
         queuearray.pop();
         p=queuearray.front();
-        
 
     }
 
