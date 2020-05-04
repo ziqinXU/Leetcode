@@ -1,5 +1,5 @@
 ///first attempt 19.58%faster, 20%less memory
-//Idea:
+//Idea:if the category number is bigger or equal to the half of whole candies, the sister can get maximum half of it. Otherwise, all sorts of candies.
 class Solution {
 public:
     int distributeCandies(vector<int>& candies) {
