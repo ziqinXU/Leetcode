@@ -1,3 +1,7 @@
+///first attempt 48.52%faster, 100%less memory
+//Idea:If there is no string "abc" in the array, return false
+//use a vector to save temp array. if found c, check the previoud two, if b and a exist, pop all, otherwise return false
+//if the vector is empty at the end, return true, otherwise false
 class Solution {
 public:
     bool isValid(string S) {
