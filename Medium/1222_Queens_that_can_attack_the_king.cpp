@@ -1,10 +1,12 @@
+///first attempt 92.72%faster, 100%less memory
+//Idea:find the position of the king, and search the first queen in its horizontal, vertical and diagonal directions.
 class Solution {
 public:
     vector<vector<int>> queensAttacktheKing(vector<vector<int>>& queens, vector<int>& king) {
         vector<vector<int>> returnarray;
         vector<int>temp;
         int intarray[9][9];
-        for(int i=0;i<9;i++)
+        for(int i=0;i<9;i++)//mark the positions of the queen
         {
             for(int j=0;j<9;j++)
             {
@@ -16,7 +18,7 @@ public:
             intarray[queens[i][0]][queens[i][1]]=1;
         }
         int i=king[0]-1;
-        while(i>=0)
+        while(i>=0)//search the upper part
         {
             if(intarray[i][king[1]]==1)
             {
@@ -29,7 +31,7 @@ public:
             i--;
         }
         i=king[0]+1;
-        while(i<9)
+        while(i<9)//search the lower part
         {
             if(intarray[i][king[1]]==1)
             {
@@ -42,7 +44,7 @@ public:
             i++;
         }
         int j=king[1]-1;
-        while(j>=0)
+        while(j>=0)//search the left part
         {
             if(intarray[king[0]][j]==1)
             {
@@ -55,7 +57,7 @@ public:
             j--;
         }
         j=king[1]+1;
-        while(j<9)
+        while(j<9)//search the right part
         {
             if(intarray[king[0]][j]==1)
             {
@@ -69,7 +71,7 @@ public:
         }
         i=king[0]-1;
         j=king[1]-1;
-        while(i>=0&&j>=0)
+        while(i>=0&&j>=0)//search the upperleft
         {
             if(intarray[i][j]==1)
             {
