@@ -1,3 +1,5 @@
+///first attempt 45.06%faster, 25.00%less memory
+//Idea:use queue to save nodes. Sort each row and return the largest one
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
