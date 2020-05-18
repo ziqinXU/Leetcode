@@ -1,3 +1,5 @@
+///first attempt 45%faster, 100%less memory
+//Idea:Use switch to check the month, pay attetion to leap year
 class Solution {
 public:
     int numberOfDays(int Y, int M) {
@@ -41,7 +43,7 @@ public:
         a=31;
         break;
     }
-    if(M==2&&((Y%4==0&&Y%100!=0)||(Y%400==0)))
+    if(M==2&&((Y%4==0&&Y%100!=0)||(Y%400==0)))//leap year
     a=29;
     return a;
 
