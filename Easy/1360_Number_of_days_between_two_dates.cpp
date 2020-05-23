@@ -1,6 +1,8 @@
+///first attempt 100%faster, 100%less memory
+//Idea:Since the year is between 1971 and 2100, we can calculate the days difference between current date and 1971.1.1
 class Solution {
 public:
-    int checkdifference(int year, int month, int day)
+    int checkdifference(int year, int month, int day)//calculate the days difference between current date and 1971.1.1
     {
         int totaldays=0;
         for(int i=1971;i<year;i++)
