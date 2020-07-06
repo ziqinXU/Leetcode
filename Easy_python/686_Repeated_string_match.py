@@ -4,7 +4,7 @@ class Solution:
         if len(A)<=len(B):
             count=1
             arr=A
-            while len(arr)<=len(A)+2*len(B):
+            while len(arr)<=len(B)+2*len(A):# A="ab" B="bababa" size(A)*(n+2)头尾各多一次
                 if arr.find(B)!=-1:
                     return count
                 else:
