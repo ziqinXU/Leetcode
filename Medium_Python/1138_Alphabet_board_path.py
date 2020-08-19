@@ -1,3 +1,4 @@
+#注意z的特殊情况
 class Solution:
     def alphabetBoardPath(self, target: str) -> str:
         returnstring=""
