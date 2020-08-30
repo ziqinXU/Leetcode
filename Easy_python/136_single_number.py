@@ -6,3 +6,10 @@ class Solution:
                 return A[i]
         return A[i]
         
+#位运算做法 a异或a=0 a异或0=a
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        arrsum = 0
+        for i in range(len(nums)):
+            arrsum = nums[i] ^ arrsum
+        return arrsum
