@@ -7,6 +7,10 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/64_Minimum_Path_su
 62.不同路径
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/62_Unique_paths.py
 
+139.单词拆分
+https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/139_Word_break.py
+
+dfs：
 46.全排列
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/46_Permutations.py
 
