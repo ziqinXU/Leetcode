@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
+#两个指针分别遍历左右，当节点相同时，遍历左右子树
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if root is None:
