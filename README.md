@@ -16,6 +16,9 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/413_Arithmetic_sli
 647.回文子串
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/647_Palindromic_substrings.py
 
+剪绳子问题 
+https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/343_Integer_break.py
+
 dfs：
 46.全排列
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/46_Permutations.py
