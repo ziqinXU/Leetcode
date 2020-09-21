@@ -26,8 +26,12 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/46_Permutations.py
 77.组合
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/77_Combinations.py
 
+323.并查集 无向图
+https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/323_Number_of_connected_components_in_an_undirected_graph.py
+
 416.01背包问题类似
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/416_Partition_equal_subset_sum.py
+
 
 位运算:136.只出现一次的数字
       137.只出现一次的数字II
