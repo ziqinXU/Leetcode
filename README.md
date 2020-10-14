@@ -32,6 +32,8 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/323_Number_of_conn
 416.01背包问题类似
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/416_Partition_equal_subset_sum.py
 
+518.完全背包问题
+https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/518_Coin_change_2.py
 
 位运算:136.只出现一次的数字
       137.只出现一次的数字II
