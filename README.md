@@ -42,5 +42,8 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/322_Coin_change.py
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/377_Combination_sum_IV.py
 位运算:136.只出现一次的数字
       137.只出现一次的数字II
+1552.二分法+贪心
+https://github.com/ziqinXU/Leetcode/blob/master/Medium/1552_Magnetic_force_between_two_balls.cpp
+
 144.二叉树前序遍历
 https://github.com/ziqinXU/Leetcode/blob/master/Medium/144_Binary_tree_preorder_traversal.cpp
