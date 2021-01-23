@@ -29,6 +29,8 @@ https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/77_Combinations.py
 323.并查集 无向图
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/323_Number_of_connected_components_in_an_undirected_graph.py
 
+1319.并查集 C++
+https://github.com/ziqinXU/Leetcode/blob/master/Medium/1319_Number_of_operations_to_make_network_connected.cpp
 416.01背包问题类似
 https://github.com/ziqinXU/Leetcode/blob/master/Medium_Python/416_Partition_equal_subset_sum.py
 
